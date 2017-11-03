@@ -1,0 +1,475 @@
+$output-bourbon-deprecation-warnings: false !default;
+
+//@import "bourbon";
+@import "font-awesome";
+//@import "ripples.min";
+//@import "file_input/fileinput";
+//@import "step_form_wizard/step-form-wizard-all";
+//@import "dropdown-js/jquery.dropdown";
+//@import "pricing/animate";
+//@import "pricing/version_05";
+@import "business-frontpage";
+//@import 'web/main';
+//@import "web/contests";
+//@import "pagination";
+//@import 'rev-slider/layers';
+//@import 'rev-slider/settings';
+//@import 'rev-slider/navigation';
+@import "spacing-helpers";
+
+body {
+  margin-top: 10px;
+}
+
+.top-header {
+  height: 40px;
+  background-color: #272148;
+}
+
+.hawayah-nav {
+
+}
+
+.tp-caption {
+  text-align: right !important;
+  font-family: 'Cairo'
+}
+
+nav ul a:hover {
+  background-color: transparent !important;
+}
+
+body {
+  padding-top: 0px !important;
+  /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+@media only screen and (min-width: 601px) {
+
+  nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+    height: 100px;
+    line-height: 100px;
+  }
+}
+
+@media only screen and (max-width: 601px) {
+
+  nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+    height: 100px;
+    line-height: 100px;
+  }
+}
+
+.globe {
+  font-size: 25px;
+  color: #757575;
+}
+.social-btn{
+  border-radius: 8px;
+  margin: 5px;
+}
+.nav-list a {
+  line-height: 0px;
+  padding: 0px 10px 0px 10px;
+}
+
+.logo {
+  height: 50px;
+  margin: 25px 70px 70px 25px;
+}
+
+.nav-icon {
+  width: 40px;
+  padding: 5px;
+}
+
+.nav-list {
+  width: 50px;
+  height: 50px;
+  display: block;
+  padding: 5px;
+  background-color: #e3e7f5;
+  text-align: center;
+  margin: 0px 8px 0px 8px;
+}
+.social-btn{
+  border-radius: 8px;
+  margin: 5px;
+}
+.nav-list a {
+  padding: 0px;
+  display: block;
+
+}
+
+/*
+nav ul li:after{
+  content: '/';
+}
+*/
+footer {
+  margin: 50px 0 0 0;
+}
+
+footer.page-footer {
+
+  background-color: #2A2A2A;
+}
+
+#contests_organization_category .dropdown-content li > a, .dropdown-content li > span {
+  color: #36334e;
+}
+
+#contests_organization_category_select .select-dropdown, #contests_design_types_select .select-dropdown, #contests_order_by_select .select-dropdown {
+  background-color: #e3e7f5;
+  opacity: 0.5;
+}
+
+#contests_organization_category_select .caret, #contests_design_types_select .caret, #contests_order_by_select .caret {
+  color: #3c225f;
+  font-size: large;
+}
+
+.locale-text .nav-list a {
+  margin: 5px;
+  padding: 15px 0 0 0;
+  text-align: center;
+  color: #36334e;
+  font-size: 22px;
+}
+
+.intro-card-image {
+  width: 40%;
+  float: left;
+  height: 100%;
+
+}
+
+.intro-card-image img {
+
+  float: right;
+  width: 60%;
+  height: auto;
+}
+
+.intro-card-number {
+  width: 20%;
+  float: right;
+  height: 100%;
+}
+
+.intro-card-number div {
+  line-height: 50px;
+  font-size: 50px;
+  width: 100%;
+  height: 100%;
+}
+
+.intro-card-number p {
+  width: 100%;
+}
+
+.intro-card-content p {
+  width: 100%;
+  font-size: 25px;
+}
+
+.intro-card-content {
+  height: 100%;
+}
+
+.how_it_works_section col {
+  padding: 0px;
+}
+
+.h-dark-red {
+  color: #48212f;
+}
+
+.h-dark-yellow {
+  color: #c9a249;
+}
+
+.h-dark-purple {
+  color: #272148;
+}
+
+.stat-image {
+  height: 50px;
+  width: auto;
+
+}
+
+.state-content {
+  margin-top: 20px;
+}
+
+.state-content em {
+  font-style: normal;
+  font-family: "CairoBold";
+  font-size: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.state-content span {
+  font-style: normal;
+  font-family: "CairoBold";
+  color: #eaa3a5
+}
+
+.stat-image-wrapper {
+  margin-top: 25px;
+}
+
+.main-bg {
+  min-height: 600px;
+  background-size: cover;
+  background-position: center;
+  background: url(asset-path('BG.png')) no-repeat;
+  position: relative;
+}
+.main-bg .text:first-child{
+  padding-top: 180px;
+}
+.main-bg .text {
+
+    color: #FFFFFF;
+    font-family: Cairo-Bold;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 90px;
+    text-align: center;
+    text-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+
+}
+.pick-button {
+  position: absolute;
+  color: #fff;
+  font-size: 30px;
+  line-height: 70px;
+  text-align: center;
+  bottom: 60px;
+  height: 70px;
+  width: 300px;
+  border-radius: 8px;
+  background-color: #922580;
+  box-shadow: 0 5px 12px 0 rgba(128, 20, 110, 0.54);
+  left: 50%;
+  margin-left: -150px;
+  z-index: 10;
+}
+
+.section-heading {
+  line-height: 15px;
+  text-align: center;
+  color: #922580;
+  font-size: 30px;
+  margin-top: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.section-heading.line-between {
+  position: relative;
+  z-index: 1;
+
+  &:before {
+    border-top: 3px solid #922580;
+    content:"";
+    margin: 0 auto; /* this centers the line to the full width specified */
+    position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+    top: 50%; left: 0; right: 0; bottom: 0;
+    width: 55%;
+    z-index: -1;
+  }
+
+  span {
+    /* to hide the lines from behind the text, you have to set the background color the same as the container */
+    background: #fff;
+    padding: 0 25px;
+  }
+}
+
+.design-type {
+  height: 175px;
+  width: 175px;
+  background-color: #FFFFFF;
+  display: inline-block;
+  padding-top: 30px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.design-type:hover {
+  border-radius: 6px;
+  background-color: #FFFFFF;
+  box-shadow: 0 5px 39px 0 rgba(146, 37, 128, 0.16);
+}
+
+.design-type .design-image {
+  text-align: center;
+}
+
+.design-type .design-image img {
+  height: 90px;
+  width: auto;
+}
+
+.design-type .design-text {
+  text-align: center;
+  color: #922580;
+  font-family: Cairo;
+  font-size: 18px;
+  line-height: 26px;
+
+}
+
+.how_it_works_section {
+  display: inline-block;
+  padding-top: 45px;
+  margin-bottom: 15px;
+  height: 390px;
+  width: 310px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 6px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 6px 0 rgba(146, 37, 128, 0.1);
+}
+
+.how_it_works_section:hover {
+
+  box-shadow: 0 5px 39px 0 rgba(146, 37, 128, 0.16);
+}
+
+.how_it_works_section img {
+  height: 100px;
+  width: auto;;
+}
+
+.how_it_works_section .heading {
+  color: #922580;
+  font-family: Cairo;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 45px;
+  text-align: center;
+  margin-top: 10px;
+
+}
+
+.how_it_works_section .text {
+
+  margin-top: 10px;
+  color: #922580;
+  font-family: Cairo;
+  font-size: 21px;
+  line-height: 40px;
+  text-align: center;
+
+}
+
+.stat-wrapper {
+  height: 200px;
+  display: inline-block;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 250px;
+  padding-top: 10px;
+}
+
+.stat-wrapper img {
+  height: 40px;
+  width: auto;
+
+}
+
+.stat-wrapper .number {
+
+  color: #922580;
+  font-family: Cairo;
+  font-size: 60px;
+  line-height: 112px;
+  text-align: center;
+
+}
+
+.stat-wrapper .text {
+
+  color: #9A9A9A;
+  font-family: Cairo;
+  font-size: 18px;
+  line-height: 33px;
+
+}
+
+.start-now-wrapper {
+  display: inline-block;
+
+  padding-top: 45px;
+  margin-bottom: 15px;
+  height: 410px;
+  width: 310px;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
+.start-now-wrapper img {
+  width: 215px;
+  height: auto;
+  padding-top: 10px;
+}
+
+.start-now-wrapper p {
+  padding-top: 10px;
+  color: #9A9A9A;
+  font-family: Cairo;
+  font-size: 30px;
+  line-height: 56px;
+}
+
+.start-now-wrapper a {
+  height: 64px;
+  width: 247px;
+  padding: 0px 25px;
+  border-radius: 8px;
+  background-color: #922580;
+  box-shadow: 0 2px 4px 0 rgba(146, 37, 128, 0.46);
+  color: #fff;
+  font-size: 30px;
+  //line-height: 60px;
+  text-align: center;
+  border-color: transparent;
+
+}
+.second-bg{
+  margin-top: -200px;
+   height: 200px;
+  position: relative;
+}
+.terms-n-conditions{
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size:  14px;
+  color: #9A9A9A;
+}
+
+svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  /* set height to pixels if you want angle to change with screen width */
+}
+
+
+
+

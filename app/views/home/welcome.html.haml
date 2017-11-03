@@ -1,0 +1,114 @@
+.container
+  .row
+    .col.s12
+      .card-panel.lighten-2
+        %p.center-align.green-text مرحبا بكم
+        /%img{class: "responsive-img circle",  src:"http://2.bp.blogspot.com/-sgzBUkn-5vw/Ufu0FEDISBI/AAAAAAAAAeA/JsIWkkyi42Q/s1600/fitness+person+-+How+to+Become+a+Very+Healthy+Person.jpg"}
+        %br
+        %a{class:"btn btn-floating pulse"}
+          %i.material-icons menu
+
+  .row
+    .col.s12
+      %table.bordered.highlight
+        %thead
+          %tr
+            %th Name
+            %th Item Name
+            %th Item Price
+        %tbody
+          %tr
+            %td Alvin
+            %td Eclair
+            %td $0.87
+          %tr
+            %td Alan
+            %td Jellybean
+            %td $3.76
+          %tr
+            %td Jonathan
+            %td Lollipop
+            %td $7.00
+
+  .row
+    .col.s12
+      .collection
+        %a.collection-item{:href => "#!"}
+          %span.badge> 1
+          Alan
+        %a.collection-item{:href => "#!"}
+          %span.new.badge> 4
+          Alan
+        %a.collection-item{:href => "#!"} Alan
+        %a.collection-item{:href => "#!"}
+          %span.badge> 14
+          Alan
+
+  .row
+    %a.waves-effect.waves-light.btn button
+    %a.waves-effect.waves-light.btn
+      %i.material-icons.left> cloud
+      button
+    %a.waves-effect.waves-light.btn
+      %i.material-icons.right> cloud
+      button
+    .col.s4
+      %a{class:"btn-floating btn-large waves-effect waves-light red"}
+        %i.material-icons add
+
+
+  .row
+    .col.s12
+      .fixed-action-btn.vertical.click-to-toggle
+        %a.btn-floating.btn-large.red
+          %i.large.material-icons mode_edit
+        %ul
+          %li
+            %a.btn-floating.red
+              %i.material-icons insert_chart
+          %li
+            %a.btn-floating.yellow.darken-1
+              %i.material-icons format_quote
+          %li
+            %a.btn-floating.green
+              %i.material-icons publish
+          %li
+            %a.btn-floating.blue
+              %i.material-icons attach_file
+
+
+  .row
+    %a{class:"btn", onclick:"Materialize.toast('I am a toast', 4000)"} Toast!
+
+
+  .row
+    .slider
+      %ul.slides
+        %li
+          %img{:src => "https://lorempixel.com/580/250/nature/1"}/
+          / random image
+          .caption.center-align
+            %h3 This is our big Tagline!
+            %h5.light.grey-text.text-lighten-3 Here's our small slogan.
+        %li
+          %img{:src => "https://lorempixel.com/580/250/nature/2"}/
+          / random image
+          .caption.left-align
+            %h3 Left Aligned Caption
+            %h5.light.grey-text.text-lighten-3 Here's our small slogan.
+        %li
+          %img{:src => "https://lorempixel.com/580/250/nature/3"}/
+          / random image
+          .caption.right-align
+            %h3 Right Aligned Caption
+            %h5.light.grey-text.text-lighten-3 Here's our small slogan.
+        %li
+          %img{:src => "https://lorempixel.com/580/250/nature/4"}/
+          / random image
+          .caption.center-align
+            %h3 This is our big Tagline!
+            %h5.light.grey-text.text-lighten-3 Here's our small slogan.
+  .row
+    - 6.times do
+      .col.s4
+        %img{class:"materialboxed responsive-img circle", src:"http://materializecss.com/images/sample-1.jpg"}

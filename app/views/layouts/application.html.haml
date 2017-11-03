@@ -1,0 +1,33 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    %meta{:content => "", :name => "description"}/
+    %meta{:content => "", :name => "author"}/
+    /%title= content_for?(:title) ? yield(:title) : t(:app_title)
+    %title Test materialize CSS
+    - if I18n.locale== :ar
+      = stylesheet_link_tag   'application_rtl' , media: 'all', 'data-turbolinks-track' => true
+    - else
+      = stylesheet_link_tag   'application' , media: 'all', 'data-turbolinks-track' => true
+    %link{:href => "https://fonts.googleapis.com/icon?family=Material+Icons", :rel => "stylesheet"}/
+    = yield :stylesheet
+    = csrf_meta_tags
+    = favicon_link_tag 'favicon.ico'
+  %body
+    /- if @current_user
+    /  -if @current_user.type == 'Designer'
+    /    =render 'components/header_designer'
+    /  -elsif @current_user.type == 'Customer'
+    /    =render 'components/header_customer'
+    /-else
+    /  = render 'components/header'
+    /= render 'components/flash_messages'
+    = yield
+    /= render 'components/footer'
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = yield :javascript
+

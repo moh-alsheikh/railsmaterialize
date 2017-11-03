@@ -1,0 +1,122 @@
+@font-face {
+  font-family: noto_kufi_arabic_bold;
+  src: asset-path('fonts/notokufiarabic-bold-webfont.eot');
+  src: asset-path('fonts/notokufiarabic-bold-webfont.eot?#iefix') format('embedded-opentype'),
+  asset-path('fonts/notokufiarabic-bold-webfont.woff2') format('woff2'),
+  asset-path('fonts/notokufiarabic-bold-webfont.woff') format('woff'),
+  asset-path('fonts/notokufiarabic-bold-webfont.ttf') format('truetype'),
+  asset-path('fonts/notokufiarabic-bold-webfont.svg#noto_kufi_arabicbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* @font-face kit by Fonts2u (http://www.fonts2u.com) */
+@font-face {
+  font-family: 'B_Tabassom';
+  src:url(asset-path('fonts/BTabssom.eot?')) format('eot'),
+  url(asset-path('fonts/BTabssom.woff')) format('woff'),
+  url(asset-path('fonts/BTabssom.ttf')) format('truetype'),
+  url(asset-path('fonts/BTabssom.svg#BTabassom')) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: noto_kufi_arabic_regular;
+  src: url(asset-path('fonts/notokufiarabic-regular-webfont.eot'));
+  src: url(asset-path('fonts/notokufiarabic-regular-webfont.eot?#iefix')) format('embedded-opentype'),
+  url(asset-path('fonts/notokufiarabic-regular-webfont.woff2')) format('woff2'),
+  url(asset-path('fonts/notokufiarabic-regular-webfont.woff')) format('woff'),
+  url(asset-path('fonts/notokufiarabic-regular-webfont.ttf')) format('truetype'),
+  url(asset-path('fonts/notokufiarabic-regular-webfont.svg#noto_kufi_arabicregular')) format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+body {
+  padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+  //background-color: #CCC;
+}
+
+/* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
+
+.business-header {
+  height: 400px;
+  //background: url('http://placehold.it/1920x400') center center no-repeat scroll;
+  background: url('http://placehold.it/1920x400') center center no-repeat scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+/* Customize the text color and shadow color and to optimize text legibility. */
+
+.tagline {
+  text-shadow: 0 0 10px #000;
+  color: #fff;
+}
+
+.img-center {
+  margin: 0 auto;
+}
+
+footer {
+  margin: 50px 0;
+}
+
+.col-left {
+  border-right: 1px solid #333;
+}
+
+.nav-bar-custom {
+  background-color: #fff !important;
+  color: #009688 !important;
+}
+
+.navbar-brand {
+
+  font-size: 23px;
+}
+
+.modal-header {
+
+  color: #009688
+}
+
+.modal-content .modal-header {
+
+  padding-top: 0px;
+}
+
+.modal-header {
+
+  padding-top: 0px;
+}
+
+.modal-header .close {
+  margin-top: 30px;
+}
+
+#login_form h2 {
+  margin-top: 0px;
+}
+
+.no_margin_top {
+  margin-top: 0px;
+}
+
+.modal-content .modal-body {
+  padding-top: 0px;
+}
+
+.form-control .prefix ~ input, .input-field .prefix ~ textarea {
+  margin-left: 3rem;
+}
+
+.form-control-feedback {
+  left: 0;
+  top: 0;
+}

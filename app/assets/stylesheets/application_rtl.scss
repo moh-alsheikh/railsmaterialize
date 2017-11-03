@@ -1,0 +1,117 @@
+/* this file customize the materialize CSS to RTL
+it will be imported in the layout if the locale is ar
+ */
+
+@import "materialize/components/color";
+// set the colors
+$primary-color: color("grey", "darken-2") !default;
+$secondary-color:  #922580 !default;
+$link-color: #922580;
+$dropdown-hover-bg-color: color('shades','white') !default;
+
+// customize tab colors
+$tabs-text-color: #933580;
+$tabs-underline-color:#933580;
+$h1-fontsize: 4.2rem !default;
+$h2-fontsize: 3.56rem !default;
+$h3-fontsize: 2.92rem !default;
+$h4-fontsize: 1.88rem !default;
+$h5-fontsize: 1.64rem !default;
+$h6-fontsize: 1rem !default;
+@import 'materialize-rtl/materialize';
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+//@import 'nouislider/nouislider';
+@import "fonts/cairo/cairo";
+@import "common";
+
+body{
+  font-family: 'Cairo';
+
+}
+.natural-float {
+  float: right;
+}
+// language specific customization
+#nav-mobile{
+  float: left;
+}
+#nav-mobile li {
+  margin: 0px 20px 0px 20px ;
+}
+#nav-mobile li a:after {
+  //content: "/";
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+#nav-mobile>li:first-child a:after {
+  content: " ";
+}
+
+.main-links {
+  float: left;
+  height:  100%;
+}
+
+.select-dropdown li.optgroup{
+  border-top: 1px solid #e0e0e0;
+
+}
+
+
+form label {
+  font-size: 1em;
+  line-height: 110%;
+}
+
+// Styling for input field wrapper
+.input-field {
+  position: relative;
+  margin-top: 1rem;
+
+  label {
+    color: $primary-color;
+  }
+}
+
+
+.select-dropdown li{
+  border-bottom: 1px #e0e0e0 solid;
+}
+
+
+fieldset {
+  border:none;
+  border-top:1px #e0e0e0 solid;}
+
+legend {
+  padding: 0.2em 0.5em;
+  color:#000;
+  font-size:$h5-fontsize;
+  //text-align:right;
+}
+.input-field .prefix ~ label {
+  margin-left: inherit;
+  margin-right: 3rem;
+}
+.input-field .prefix ~ input, .input-field .prefix ~ textarea {
+  margin-left: inherit;
+  margin-right: 3rem;
+  width: 92%;
+  width: calc(100% - 3rem);
+}
+
+.input-field .prefix {
+  text-align: right;
+}
+
+#about_me table td {
+  text-align: right;
+}
+
+#stats .badge {
+  margin-right: 20rem;
+}
+
+
+// typography
